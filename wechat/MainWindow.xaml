@@ -1,0 +1,99 @@
+﻿<Window x:Class="wechat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wechat"
+        mc:Ignorable="d"
+       Name="window"
+        Title="MainWindow" Height="650" Width="320" WindowStyle="None"   ResizeMode="NoResize"  Background="Transparent"  AllowsTransparency="True"   >
+
+    <Border CornerRadius=" 40" Background="MediumPurple"  BorderBrush="Gray" BorderThickness=" 0.3" >
+
+
+        <Grid>
+
+
+            <Grid.RowDefinitions >
+                <RowDefinition Height=" *" />
+
+                <RowDefinition Height=" 20*" />
+                <RowDefinition Height=" *" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row=" 0"   >
+
+                <Button Width=" 20" Background="purple"  Content="X" Height=" 20" Margin="260,0,0,0 " Click="Button_Click" ></Button>
+
+            </Grid>
+            <Grid Grid.Row=" 1"  >
+                <Grid.RowDefinitions >
+                    <RowDefinition Height=" *"></RowDefinition>
+                    <RowDefinition Height=" 7*"></RowDefinition>
+                    <RowDefinition Height=" *"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row=" 0"       >
+
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height=" *"></RowDefinition>
+
+                        <RowDefinition Height=" *"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row=" 0" Background="Purple"  Margin=" 3">
+                        <StackPanel Orientation="Horizontal"  >
+                            <Image Source="Image\ic.png" Margin=" 1" ></Image>
+                            <Label Content=" WeChat" FontSize=" 12" ></Label>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row=" 1"  Background="MediumPurple" >
+                        <StackPanel Orientation="Horizontal"  >
+
+                            <Image Source="Image\girl.jpg" Margin=" 1" Width=" 50" Height=" 30"></Image>
+                            <Label Content=" Nezrin" Margin="0,4" FontSize=" 14" ></Label>
+
+                        </StackPanel>
+
+
+                    </Grid>
+
+                </Grid>
+                <Label Name="lb" Width=" 180" Height=" 30" Background="Black" Visibility="Hidden"  ></Label>
+                <Grid Grid.Row=" 1" Background="AntiqueWhite">
+
+                    <Image Source="Image\p.png" Height=" 900"/>
+                    <ListBox   Name="list"  Background="Transparent" Width=" 150" Height=" 450" Margin="170,9,0,0.2"/>
+                    <ListBox   Name="list2"  Background="Transparent" Height=" 450" Margin="0,9,150,0.2" />
+                    <!--<ListBox   Name="list2"  Background="Transparent" />-->
+                    <!--<ListBox   Name="list2" Background="Transparent" SelectionChanged="list2_SelectionChanged" Margin="0,0,10,-0.8"  />-->
+
+                </Grid>
+                <Grid Grid.Row=" 2" Background="MediumPurple"  >
+
+                    <Border  Grid.Row="1" BorderBrush="Purple"   BorderThickness=" 3" Margin="7" CornerRadius=" 10" >
+                        <StackPanel Orientation="Horizontal"  >
+                            <TextBox Name="messtxtb"  Width=" 260"
+                         BorderThickness=" 0"
+                                         Cursor="Hand" 
+                         FontSize=" 20" Background="MediumPurple" >
+
+                            </TextBox>
+                            <Button Width=" 30" Height=" 30" x:Name="sendbtn"
+                                   Cursor="Hand" 
+                        
+                        BorderBrush="White"  Content=" send" FontSize=" 11" BorderThickness=" 1" Background="Green" Click="sendbtn_Click"  >
+
+                            </Button>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Grid>
+
+
+        </Grid>
+
+
+
+
+
+    </Border>
+
+</Window>
