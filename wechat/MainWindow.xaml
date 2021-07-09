@@ -41,14 +41,14 @@
                     <Grid Grid.Row=" 0" Background="Purple"  Margin=" 3">
                         <StackPanel Orientation="Horizontal"  >
                             <Image Source="Image\ic.png" Margin=" 1" ></Image>
-                            <Label Content=" WeChat" FontSize=" 12" ></Label>
+                            <Label Content=" WeChat" FontSize=" 12" Foreground="White" ></Label>
                         </StackPanel>
                     </Grid>
                     <Grid Grid.Row=" 1"  Background="MediumPurple" >
                         <StackPanel Orientation="Horizontal"  >
 
                             <Image Source="Image\girl.jpg" Margin=" 1" Width=" 50" Height=" 30"></Image>
-                            <Label Content=" Nezrin" Margin="0,4" FontSize=" 14" ></Label>
+                            <Label Content=" Nezrin" Margin="0,4" FontSize=" 14" Foreground="White"  ></Label>
 
                         </StackPanel>
 
@@ -60,8 +60,8 @@
                 <Grid Grid.Row=" 1" Background="AntiqueWhite">
 
                     <Image Source="Image\p.png" Height=" 900"/>
-                    <ListBox   Name="list"  Background="Transparent" Width=" 150" Height=" 450" Margin="170,9,0,0.2"/>
-                    <ListBox   Name="list2"  Background="Transparent" Height=" 450" Margin="0,9,150,0.2" />
+                    <ListBox   Name="list"  Background="Transparent" Foreground="White"  FontSize="20 " Width=" 150" Height=" 450" Margin="170,9,0,0.2"/>
+                    <ListBox   Name="list2"  Background="Transparent"  Foreground="White"  FontSize="20 " Height=" 450" Margin="0,9,150,0.2" />
                     <!--<ListBox   Name="list2"  Background="Transparent" />-->
                     <!--<ListBox   Name="list2" Background="Transparent" SelectionChanged="list2_SelectionChanged" Margin="0,0,10,-0.8"  />-->
 
@@ -70,17 +70,22 @@
 
                     <Border  Grid.Row="1" BorderBrush="Purple"   BorderThickness=" 3" Margin="7" CornerRadius=" 10" >
                         <StackPanel Orientation="Horizontal"  >
-                            <TextBox Name="messtxtb"  Width=" 260"
+                            <TextBox Name="messtxtb"
+                                  Foreground="White"    Width=" 260"
                          BorderThickness=" 0"
                                          Cursor="Hand" 
                          FontSize=" 20" Background="MediumPurple" >
 
                             </TextBox>
+                                
                             <Button Width=" 30" Height=" 30" x:Name="sendbtn"
                                    Cursor="Hand" 
                         
-                        BorderBrush="White"  Content=" send" FontSize=" 11" BorderThickness=" 1" Background="Green" Click="sendbtn_Click"  >
-
+                        BorderBrush="White"  FontSize=" 11" BorderThickness=" 1" Background="Green" Click="sendbtn_Click"  >
+                                <StackPanel Orientation="Horizontal" >
+                                    <Image Source="Image\send.png"></Image>
+                                    
+                                </StackPanel>
                             </Button>
                         </StackPanel>
                     </Border>
