@@ -81,7 +81,7 @@
                             <Button Width=" 30" Height=" 30" x:Name="sendbtn"
                                    Cursor="Hand" 
                         
-                        BorderBrush="White"  FontSize=" 11" BorderThickness=" 1" Background="Green" Click="sendbtn_Click"  >
+                        BorderBrush="White"  FontSize=" 11" BorderThickness=" 1"  Click="sendbtn_Click"  >
                                 <StackPanel Orientation="Horizontal" >
                                     <Image Source="Image\send.png"></Image>
                                     
